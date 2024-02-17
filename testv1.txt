@@ -1,0 +1,13 @@
+		Input		Output
+test1		1		nothing
+
+test2		0		"That is not a valid difficulty! Please enter the difficulty: "
+		10		"That is not a valid difficulty! Please enter the difficulty: "
+		-1		"That is not a valid difficulty! Please enter the difficulty: "
+		3		nothing
+
+test3		asd		ERROR (code continues anyway though)
+				"That is not a valid difficulty! Please enter the difficulty: "
+		2		nothing
+		
+

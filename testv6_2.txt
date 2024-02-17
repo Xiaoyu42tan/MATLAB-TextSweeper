@@ -1,0 +1,17 @@
+		Input		Output
+test1		1		prints a 10x10 minefield. 
+				"Do you want to flag a coordinate? (enter 'y' for yes, enter anything else for no): "
+		y		"Type the x-value of the coordinate you wish to flag: "
+		3		"Type the y-value of the coordinate you wish to flag: "
+		3		(prints a 10x10 minefield with a red X on the coordinate that user wanted to flag)
+				"Do you want to flag a coordinate? (enter 'y' for yes, enter anything else for no): "
+		n		"Type the x-value of the coordinate you wish to uncover: "
+		3		"Type the y-value of the coordinate you wish to uncover: "
+		3		(uncovers coordinate (3,3) to be a numbered tile with a blank tile adjacent to it, so that blank tile and all blank tiles connected to it are also revealed)
+
+test2 (rare) 	1		prints a 10x10 minefield.
+				"Do you want to flag a coordinate? (enter 'y' for yes, enter anything else for no): "
+		n		"Type the x-value of the coordinate you wish to uncover: "
+		1		"Type the y-value of the coordinate you wish to uncover: "
+		1		(uncovers coordinate (1,1) to be a numbered tile, reveals only (2,1) to be a numbered tile also, this is a bug)
+				(this bug occurred since border tiles are set to 0 by default, and one of the border tiles was changed to -1 from the firstTry mechanic, interfering with the while loop that reveals all tiles next to a tile with -1)

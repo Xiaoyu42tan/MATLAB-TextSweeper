@@ -1,0 +1,39 @@
+		Input		Output
+test1		1		prints a 10x10 minefield where all non-revealed tiles are denoted by zero
+				"Type the x-value of the coordinate you wish to uncover: "
+		1		"Type the y-value of the coordinate you wish to uncover: "
+		1		prints a 10x10 minefield where all non-revealed tiles are denoted by zero, revealed tiles with no nearby mines are denoted by an empty space, and revealed tiles with nearby mines are denoted by their respective number
+				"Type the x-value of the coordinate you wish to uncover: "
+		2		"Type the y-value of the coordinate you wish to uncover: "
+		2 		(prints new state of minefield, user hits mine)
+				"You've hit a mine! GAME OVER!"
+				
+
+test2		1		prints a 10x10 minefield where all non-revealed tiles are denoted by zero
+				"Type the x-value of the coordinate you wish to uncover: "
+		-1		"Type the y-value of the coordinate you wish to uncover: "
+		-1		"Not valid coordinate!"
+				"Type the x-value of the coordinate you wish to uncover: "
+		100		"Type the y-value of the coordinate you wish to uncover: "
+		100		"Not valid coordinate!"
+				"Type the x-value of the coordinate you wish to uncover: "
+		0		"Type the y-value of the coordinate you wish to uncover: "
+		0		"Not valid coordinate!" (fixed to not allow x or y less than 1)
+				"Type the x-value of the coordinate you wish to uncover: "
+		11		"Type the y-value of the coordinate you wish to uncover: "
+		11		"Not valid coordinate!" (fixed to not allow x or y greater than 10)
+				"Type the x-value of the coordinate you wish to uncover: "
+		1		"Type the y-value of the coordinate you wish to uncover: "
+		1		(prints new state of minefield, game continues as normal)
+			
+
+test3		1		prints a 10x10 minefield where all non-revealed tiles are denoted by zero
+				"Type the x-value of the coordinate you wish to uncover: "
+		1		"Type the y-value of the coordinate you wish to uncover: "
+		1		(prints new state)
+				"Type the x-value of the coordinate you wish to uncover: "
+		1		"Type the y-value of the coordinate you wish to uncover: "
+		1		"Not valid coordinate!" (fixed to not allow the user to enter the same coordinate twice)
+				"Type the x-value of the coordinate you wish to uncover: "
+		asd		ERROR (code continues anyway, hasnt exited while loop)
+				"Type the x-value of the coordinate you wish to uncover: "

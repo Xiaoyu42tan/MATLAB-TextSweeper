@@ -1,0 +1,7 @@
+		Input		Output
+test1		1		ERROR (invalid index)
+
+test2		0		"That is not a valid difficulty! Please enter the difficulty: "
+		2		ERROR (invalid index)
+
+test3		3		ERROR (invalid index)

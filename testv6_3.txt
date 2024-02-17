@@ -1,0 +1,14 @@
+		Input		Output
+test1 (rare) 	1		prints a 10x10 minefield.
+				"Do you want to flag a coordinate? (enter 'y' for yes, enter anything else for no): "
+		n		"Type the x-value of the coordinate you wish to uncover: "
+		1		"Type the y-value of the coordinate you wish to uncover: "
+		1		(uncovers coordinate (1,1) to be a numbered tile, uncovers nothing else)
+				"Do you want to flag a coordinate? (enter 'y' for yes, enter anything else for no): "
+		n		"Type the x-value of the coordinate you wish to uncover: "
+		3		"Type the y-value of the coordinate you wish to uncover: "
+		5		(uncovers coordinate (3,5) to be a numbered tile, and uncovers all connected blank tiles also)
+				"Do you want to flag a coordinate? (enter 'y' for yes, enter anything else for no): "
+		n		"Type the x-value of the coordinate you wish to uncover: "
+		9		"Type the y-value of the coordinate you wish to uncover: "
+		9		(uncovers (9,9) to be a numbered tile, uncovers nothing else)

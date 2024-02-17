@@ -1,0 +1,13 @@
+		Input		Output
+test1		1		prints a 10x10 minefield where mines are denoted by x
+
+
+test2		0		"That is not a valid difficulty! Please enter the difficulty: "
+		100		"That is not a valid difficulty! Please enter the difficulty: "
+		-1		"That is not a valid difficulty! Please enter the difficulty: "
+		3		prints a 30x20 minefield where mines are denoted by x
+
+test3		asd		ERROR (code restarts)
+		2		prints a 20x20 minefield where mines are denoted by x
+		
+

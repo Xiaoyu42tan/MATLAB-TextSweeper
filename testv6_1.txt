@@ -1,0 +1,31 @@
+		Input		Output
+test1		1		prints a 10x10 minefield. 
+				"Do you want to flag a coordinate? (enter 'y' for yes, enter anything else for no): "
+		y		"Type the x-value of the coordinate you wish to flag: "
+		3		"Type the y-value of the coordinate you wish to flag: "
+		3		(prints a 10x10 minefield with a red X on the coordinate that user wanted to flag)
+				"Do you want to flag a coordinate? (enter 'y' for yes, enter anything else for no): "
+		n		"Type the x-value of the coordinate you wish to uncover: "
+		3		"Type the y-value of the coordinate you wish to uncover: "
+		3		(uncovers coordinate (3,3) to be a blank tile. red X disappears, game proceeds as normal)
+				"Do you want to flag a coordinate? (enter 'y' for yes, enter anything else for no): "
+		y		"Type the x-value of the coordinate you wish to flag: "
+		5		"Type the y-value of the coordinate you wish to flag: "
+		4		(flags (5,4))
+				"Do you want to flag a coordinate? (enter 'y' for yes, enter anything else for no): "
+		n		"Type the x-value of the coordinate you wish to uncover: "
+		5		"Type the y-value of the coordinate you wish to uncover: "
+		4		(prints minefield, user hits mine)
+				"You've hit a mine! GAME OVER"
+
+test2		2		prints a 20x20 minefield
+				"Do you want to flag a coordinate? (enter 'y' for yes, enter anything else for no): "
+		n		"Type the x-value of the coordinate you wish to uncover: "
+		3		"Type the y-value of the coordinate you wish to uncover: "
+		3		(reveals (3,3). since (3,3) is blank and now revealed, its surrounding tiles are also revealed)
+		...
+		(user plays out rest of game)
+		...		"You're still alive, good job!"
+				
+
+		

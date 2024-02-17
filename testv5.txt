@@ -1,0 +1,36 @@
+		Input		Output
+test1		1		prints a 10x10 minefield. 
+				"Type the x-value of the coordinate you wish to uncover: "
+		1		"Type the y-value of the coordinate you wish to uncover: "
+		1		prints a 10x10 minefield. in minesweeper fashion, all tiles within a 1-tile-radius of any revealed blank tile on the map is also revealed.
+				"Type the x-value of the coordinate you wish to uncover: "
+		2		"Type the y-value of the coordinate you wish to uncover: "
+		2 		(prints new state of minefield)
+
+		(user plays out rest of game)
+
+		...		"You're still alive, good job!"
+				
+
+test2		1		prints a 10x10 minefield.
+				"Type the x-value of the coordinate you wish to uncover: "
+		-1		"Type the y-value of the coordinate you wish to uncover: "
+		-1		"Not valid coordinate!"
+				"Type the x-value of the coordinate you wish to uncover: "
+		100		"Type the y-value of the coordinate you wish to uncover: "
+		100		"Not valid coordinate!"
+				"Type the x-value of the coordinate you wish to uncover: "
+		0		"Type the y-value of the coordinate you wish to uncover: "
+		0		"Not valid coordinate!"
+				"Type the x-value of the coordinate you wish to uncover: "
+		11		"Type the y-value of the coordinate you wish to uncover: "
+		11		"Not valid coordinate!"
+				"Type the x-value of the coordinate you wish to uncover: "
+		1		"Type the y-value of the coordinate you wish to uncover: "
+		1		prints a 10x10 minefield. in minesweeper fashion, all tiles within a 1-tile-radius of any revealed blank tile on the map is also revealed.
+				"Type the x-value of the coordinate you wish to uncover: "
+		2		"Type the y-value of the coordinate you wish to uncover: "
+		2		"Not valid coordinate!" (the coordinate (2,2) has already been uncovered since it is diagonally adjacent to (1,1), and (1,1) is a blank tile that was just revealed)
+				"Type the x-value of the coordinate you wish to uncover: "
+		2		"Type the y-value of the coordinate you wish to uncover: "
+		3		"You've hit a mine! GAME OVER"

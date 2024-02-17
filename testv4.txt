@@ -1,0 +1,35 @@
+		Input		Output
+test1		1		prints a 10x10 minefield where all non-revealed tiles are denoted by zero
+				"Type the x-value of the coordinate you wish to uncover: "
+		1		"Type the y-value of the coordinate you wish to uncover: "
+		1		prints a 10x10 minefield where all non-revealed tiles are denoted by zero, revealed tiles with no nearby mines are denoted by an empty space, and revealed tiles with nearby mines are denoted by their respective number
+				"Type the x-value of the coordinate you wish to uncover: "
+		2		"Type the y-value of the coordinate you wish to uncover: "
+		2 		(prints new state of minefield, user hits mine)
+				"You've hit a mine! GAME OVER!"
+				
+
+test2		1		prints a 10x10 minefield where all non-revealed tiles are denoted by zero
+				"Type the x-value of the coordinate you wish to uncover: "
+		-1		"Type the y-value of the coordinate you wish to uncover: "
+		-1		ERROR (code ends)
+
+
+test3		1		prints a 10x10 minefield where all non-revealed tiles are denoted by zero
+				"Type the x-value of the coordinate you wish to uncover: "
+		100		"Type the y-value of the coordinate you wish to uncover: "
+		100		ERROR (code ends)
+		
+test4		1		prints a 10x10 minefield where all non-revealed tiles are denoted by zero
+				"Type the x-value of the coordinate you wish to uncover: "
+		0		"Type the y-value of the coordinate you wish to uncover: "
+		0		prints the minefield with no change, even though 0,0 is not a coordinate. this does not break the code since the minefield is bigger than is printed
+				"Type the x-value of the coordinate you wish to uncover: "
+		11		"Type the y-value of the coordinate you wish to uncover: "
+		11		prints the minefield with no change, even though 11,11 is not a coordinate. this does not break the code since the minefield is bigger than is printed
+				"Type the x-value of the coordinate you wish to uncover: "
+		1		"Type the y-value of the coordinate you wish to uncover: "
+		1		(prints new state of minefield)
+				"Type the x-value of the coordinate you wish to uncover: "
+		1		"Type the y-value of the coordinate you wish to uncover: "
+		1		prints minefield with no change. game allows uncovered coordinates to be selected again.
