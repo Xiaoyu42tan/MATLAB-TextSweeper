@@ -3,6 +3,7 @@
 **TextSweeper is an ASCII art text-based Minesweeper in MATLAB.**
 
 
+
 Featuring 3 different level difficulties:
 
    Beginner (10x10 grid, 10 mines)
